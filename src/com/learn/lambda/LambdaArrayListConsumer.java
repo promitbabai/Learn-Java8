@@ -31,10 +31,10 @@ public class LambdaArrayListConsumer {
     public static void main (String args []){
 
         // Consumer to display a number
-        Consumer<Integer> display = a -> System.out.println(a);
+        Consumer<Integer> displayMethod = a -> System.out.println(a);
 
         // Implement display using accept()
-        display.accept(10);
+        displayMethod.accept(10);
 
         // Consumer to multiply 2 to every integer of a list
         Consumer<List<Integer> > modify = list ->
