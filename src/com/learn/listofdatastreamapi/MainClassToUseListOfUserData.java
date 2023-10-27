@@ -47,7 +47,7 @@ public class MainClassToUseListOfUserData {
         sortedByCityThenByName.forEach(user -> System.out.println(user.getCity() + " - " + user.getName()));*/
 
 
-        System.out.println("\n ############ Sort List of Objects based on Custom Comparator ################### ");
+      /*  System.out.println("\n ############ Sort List of Objects based on Custom Comparator ################### ");
 
         List<User> sortedByCustomComparator =userList.stream().sorted((o1,o2) -> {
                                                                     if(o1.getId() == o2.getId())
@@ -57,10 +57,12 @@ public class MainClassToUseListOfUserData {
                                                                     else return -1;
                                                                 })
                                                                 .collect(Collectors.toList());
-        sortedByCustomComparator.forEach(user -> System.out.println(user.getCity() + " - " + user.getName()));
+        sortedByCustomComparator.forEach(user -> System.out.println(user.getCity() + " - " + user.getName()));*/
 
         System.out.println("\n ############ Delete certain Objects from the List based on certain parameters ################### ");
-
-
+        List<User> reducedListFilterByCity = userList.stream()
+                .filter(user -> (!user.getCity().equals("kolkata")))
+                .collect(Collectors.toList());
+        reducedListFilterByCity.forEach(user -> System.out.println(user.getCity() + " - "+ user.getName()));
     }
 }
