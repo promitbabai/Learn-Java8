@@ -23,7 +23,7 @@ public class StreamAPIIntermediateOperations {
 
     public static void main(String[] args) {
 
-        //1. map()
+     /*   //1. map()
         List number = Arrays.asList(2,3,4,5);
         List square = number.stream()
                 .map(x->x*x)
@@ -31,16 +31,19 @@ public class StreamAPIIntermediateOperations {
 
         //2. filter()
         List names = Arrays.asList("Reflection","Collection","Stream");
-        List result = names.stream().filter(s->s.startsWith("S")).collect(Collectors.toList());
+        List result = names.stream()
+                        .filter(s->s.startsWith("S"))
+                        .collect(Collectors.toList());
 
 
         //3. sorted()
         List names2 = Arrays.asList("Reflection","Collection","Stream");
         List result2 = names2.stream()
                         .sorted()
-                        .collect(Collectors.toList());
+                        .collect(Collectors.toList());*/
 
     }
+
 
 
 }
