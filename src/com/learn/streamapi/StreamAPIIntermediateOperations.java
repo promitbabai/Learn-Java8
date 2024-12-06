@@ -14,6 +14,14 @@ import java.util.stream.Collectors;
  *      1. map() - used to return a stream consisting of the results of applying the given function to the elements of this stream.
  *      2. filter() - used to select elements as per the Predicate passed as an argument.
  *      3. sorted() - used to sort the stream.
+ *        filter()
+ *        map()
+ *        flatMap()
+ *        distinct()
+ *        sorted()
+ *        peek()
+ *        limit()
+ *        skip()
  *
  * @author  Promit Majumder
  * @version 1.0
